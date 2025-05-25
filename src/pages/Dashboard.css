@@ -1,0 +1,82 @@
+/* Asegura que no haya márgenes por defecto */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    width: 100%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #ecf0f1;
+}
+
+/* Contenedor principal ocupa todo el viewport */
+.dashboard-container {
+    display: flex;
+    height: 100vh;
+    width: 100vw; /* Asegura ancho completo */
+}
+
+/* Sidebar */
+.sidebar {
+    width: 250px;
+    background-color: #2c3e50;
+    color: white;
+    padding: 2rem 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+/* Sidebar detalles */
+.sidebar h2 {
+    margin-bottom: 2rem;
+}
+
+.sidebar ul {
+    list-style: none;
+}
+
+.sidebar li {
+    margin: 1rem 0;
+    cursor: pointer;
+}
+
+.sidebar li:hover {
+    text-decoration: underline;
+}
+
+.logout-btn {
+    background-color: #e74c3c;
+    border: none;
+    padding: 0.5rem 1rem;
+    color: white;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+/* Main content ocupa el resto del espacio */
+.main-content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+}
+
+/* Header ocupa ancho completo */
+.header {
+    background-color: #3498db;
+    color: white;
+    padding: 1rem 2rem;
+}
+
+/* Contenido principal con fondo blanco y margen interno */
+.content {
+    flex: 1;
+    background-color: white;
+    padding: 2rem;
+    border-radius: 0;
+    box-shadow: none;
+}
